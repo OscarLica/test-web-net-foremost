@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Correo</th>
+      <th>Telefono</th>
+      <th>Creado</th>
+      <th>Modificado</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of collection">
+      <td>
+        {{user.Id}}
+      </td>
+      <td>{{user.Nombre}}</td>
+      <td>{{user.Apellido}}</td>
+      <td>{{user.Correo}}</td>
+      <td>{{user.Telefono}}</td>
+      <td>{{user.Creado}}</td>
+      <td>{{user.Modificado}}</td>
+      <td><button class="btn btn-primary" [routerLink]="['/user-formulario', user.Id]"> detalle</button></td>
+    </tr>
+  </tbody>
+</table>

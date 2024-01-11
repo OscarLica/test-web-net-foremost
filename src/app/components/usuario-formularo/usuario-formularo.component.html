@@ -1,0 +1,39 @@
+
+<h2>DETALLE DEL USUARIO</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input class="form-control" type="text" name="Nombre" (ngModel)="usuario?.Nombre" [value]="usuario?.Nombre"/>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Apellido</label>
+          <input class="form-control" type="text" name="Nombre" (ngModel)="usuario?.Nombre" [value]="usuario?.Apellido"/>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Correo</label>
+        <input class="form-control" type="text" name="Nombre" (ngModel)="usuario?.Correo" [value]="usuario?.Correo"/>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Telefono</label>
+          <input class="form-control" type="text" name="Nombre" (ngModel)="usuario?.Telefono" [value]="usuario?.Telefono"/>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-primary" (click)="save()">Guardar</button>
+    </div>
+  </div>
+</div>
